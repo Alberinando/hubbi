@@ -1,11 +1,13 @@
-import { BrowserRouter as Router } from "react-router-dom";
+import React from 'react';
+import Navbar from './Components/Navbar';
 import AppRoutes from './Router/Router';
 
-const App = () => {
+const App: React.FC = () => {
   return (
-    <Router>
+    <>
+      <Navbar />
       <AppRoutes />
-    </Router>
+    </>
   );
 };
 
